@@ -1,4 +1,23 @@
 // ========================
+// Dark Mode Toggle
+// ========================
+const themeToggle = document.getElementById('theme-toggle');
+const themeIcon = themeToggle.querySelector('.theme-icon');
+
+// Apply saved theme on load
+const savedTheme = localStorage.getItem('theme') || 'light';
+document.documentElement.setAttribute('data-theme', savedTheme);
+themeIcon.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+
+themeToggle.addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    themeIcon.textContent = next === 'dark' ? '☀️' : '🌙';
+});
+
+// ========================
 // Scroll Fade-In Animation
 // ========================
 const fadeEls = document.querySelectorAll('.fade-up');
