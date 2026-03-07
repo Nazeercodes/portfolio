@@ -4,18 +4,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nazeer Ahmed — Software Developer</title>
+  <title>Nazeer Ahmed — Full Stack Developer</title>
   <meta name="description"
-    content="Software developer portfolio showcasing projects, skills, and contact information." />
+    content="Full Stack Developer specializing in React and Python. Building clean, performant web applications." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <!-- ====== NAV ====== -->
   <nav id="navbar">
     <div class="nav-inner">
       <a href="#about" class="nav-logo">NA.</a>
@@ -31,51 +30,89 @@
     </div>
   </nav>
 
-  <!-- ====== ABOUT / HERO ====== -->
   <section id="about">
     <div class="container">
-      <div class="fade-up">
-        <span class="hero-tag">👋 Available for work</span>
-      </div>
-      <h1 class="hero-name fade-up">
-        Hi, I'm <span>Nazeer Ahmed</span><br />
-        Software Developer.
-      </h1>
-      <p class="hero-bio fade-up">
-        I build clean, performant, and thoughtful digital experiences.
-        Focused on writing code that's easy to read, maintain, and scale.
-      </p>
-      <div class="hero-actions fade-up">
-        <a href="#projects" class="btn btn-primary">View My Work ↓</a>
-        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="fade-up">
+            <span class="hero-tag">👋 Available for work</span>
+          </div>
+          <h1 class="hero-name fade-up">
+            Nazeer<br />
+            <span>Ahmed.</span>
+          </h1>
+          <p class="hero-role fade-up">Full Stack Developer — React & Python</p>
+          <p class="hero-bio fade-up">
+            I build full-stack web applications with React on the front and Python on the back.
+            Currently based in Kolkata — open to remote roles and on-site opportunities across India.
+            I care about clean architecture, fast delivery, and writing code that actually makes sense six months later.
+          </p>
+          <div class="hero-actions fade-up">
+            <a href="#projects" class="btn btn-primary">View My Work ↓</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-aside fade-up">
+          <div class="hero-card">
+            <div class="hero-card-row">
+              <span class="hero-card-label">Focus</span>
+              <span class="hero-card-value">React + Python</span>
+            </div>
+            <div class="hero-card-row">
+              <span class="hero-card-label">Location</span>
+              <span class="hero-card-value">Kolkata, India</span>
+            </div>
+            <div class="hero-card-row">
+              <span class="hero-card-label">Open to</span>
+              <span class="hero-card-value">Remote / On-site</span>
+            </div>
+            <div class="hero-card-row">
+              <span class="hero-card-label">Status</span>
+              <span class="hero-card-value status-dot">Actively looking</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ====== SKILLS ====== -->
   <section id="skills">
     <div class="container">
       <p class="section-label fade-up">What I Work With</p>
       <h2 class="section-title fade-up">Skills & Technologies</h2>
       <hr class="section-divider" />
-      <div class="skills-grid">
-        <span class="skill-pill fade-up">JavaScript</span>
-        <span class="skill-pill fade-up">TypeScript</span>
-        <span class="skill-pill fade-up">React</span>
-        <span class="skill-pill fade-up">Node.js</span>
-        <span class="skill-pill fade-up">Python</span>
-        <span class="skill-pill fade-up">REST APIs</span>
-        <span class="skill-pill fade-up">SQL</span>
-        <span class="skill-pill fade-up">MongoDB</span>
-        <span class="skill-pill fade-up">Git & GitHub</span>
-        <span class="skill-pill fade-up">Docker</span>
-        <span class="skill-pill fade-up">Linux</span>
-        <span class="skill-pill fade-up">HTML & CSS</span>
+      <div class="skills-columns">
+        <div class="skills-column">
+          <p class="skills-col-label">Frontend</p>
+          <div class="skills-grid">
+            <span class="skill-pill fade-up">React</span>
+            <span class="skill-pill fade-up">JavaScript</span>
+            <span class="skill-pill fade-up">TypeScript</span>
+            <span class="skill-pill fade-up">HTML & CSS</span>
+          </div>
+        </div>
+        <div class="skills-column">
+          <p class="skills-col-label">Backend</p>
+          <div class="skills-grid">
+            <span class="skill-pill fade-up">Python</span>
+            <span class="skill-pill fade-up">FastAPI</span>
+            <span class="skill-pill fade-up">REST APIs</span>
+            <span class="skill-pill fade-up">SQL</span>
+          </div>
+        </div>
+        <div class="skills-column">
+          <p class="skills-col-label">Tools</p>
+          <div class="skills-grid">
+            <span class="skill-pill fade-up">Git & GitHub</span>
+            <span class="skill-pill fade-up">Linux</span>
+            <span class="skill-pill fade-up">Postman</span>
+            <span class="skill-pill fade-up">Figma</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ====== PROJECTS ====== -->
   <section id="projects">
     <div class="container">
       <p class="section-label fade-up">Selected Work</p>
@@ -83,72 +120,40 @@
       <hr class="section-divider" />
       <div class="projects-grid">
 
-        <!-- Project 1: RoomiE -->
-        <article class="project-card fade-up">
+        <article class="project-card fade-up featured">
           <div class="project-preview">
             <img src="images/roomie-preview.png" alt="RoomiE app preview" loading="lazy" />
           </div>
-          <h3 class="project-title">RoomiE</h3>
-          <p class="project-desc">
-            A full-stack roommate-finder platform that helps people find affordable shared accommodation.
-            Features real-time chat, listing management, image uploads, saved listings, and JWT-based authentication.
-          </p>
-          <div class="project-tags">
-            <span class="project-tag">React</span>
-            <span class="project-tag">Node.js</span>
-            <span class="project-tag">Express</span>
-            <span class="project-tag">MongoDB</span>
-            <span class="project-tag">Socket.io</span>
-          </div>
-          <div class="project-links">
-            <a href="https://roomie-gray.vercel.app/" class="project-link" target="_blank" rel="noopener">
-              ↗ Live Demo
-            </a>
-            <a href="https://github.com/Nazeercodes/roomie" class="project-link" target="_blank" rel="noopener">
-              ⌥ GitHub
-            </a>
-          </div>
-        </article>
-
-        <!-- Project 2 -->
-        <article class="project-card fade-up">
-          <h3 class="project-title">Project Two</h3>
-          <p class="project-desc">
-            A developer tool / CLI / API that improves workflow efficiency and integrates with existing ecosystems.
-          </p>
-          <div class="project-tags">
-            <span class="project-tag">Python</span>
-            <span class="project-tag">REST API</span>
-            <span class="project-tag">Docker</span>
-          </div>
-          <div class="project-links">
-            <a href="#" class="project-link" target="_blank" rel="noopener">
-              ↗ Live Demo
-            </a>
-            <a href="#" class="project-link" target="_blank" rel="noopener">
-              ⌥ GitHub
-            </a>
+          <div class="project-body">
+            <div class="project-header">
+              <h3 class="project-title">RoomiE</h3>
+              <span class="project-badge">Full Stack</span>
+            </div>
+            <p class="project-desc">
+              A roommate-finder platform built for people looking for affordable shared accommodation.
+              Features real-time chat via Socket.io, listing management, image uploads, saved listings,
+              and JWT-based authentication — end to end.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">Express</span>
+              <span class="project-tag">MongoDB</span>
+              <span class="project-tag">Socket.io</span>
+            </div>
+            <div class="project-links">
+              <a href="https://roomie-gray.vercel.app/" class="project-link" target="_blank" rel="noopener">↗ Live Demo</a>
+              <a href="https://github.com/Nazeercodes/roomie" class="project-link" target="_blank" rel="noopener">⌥ GitHub</a>
+            </div>
           </div>
         </article>
 
-        <!-- Project 3 -->
-        <article class="project-card fade-up">
-          <h3 class="project-title">Project Three</h3>
-          <p class="project-desc">
-            An open-source project or personal experiment that showcases a specific skill or technology in depth.
-          </p>
-          <div class="project-tags">
-            <span class="project-tag">TypeScript</span>
-            <span class="project-tag">PostgreSQL</span>
-            <span class="project-tag">AWS</span>
-          </div>
-          <div class="project-links">
-            <a href="#" class="project-link" target="_blank" rel="noopener">
-              ↗ Live Demo
-            </a>
-            <a href="#" class="project-link" target="_blank" rel="noopener">
-              ⌥ GitHub
-            </a>
+        <article class="project-card fade-up coming-soon-card">
+          <div class="coming-soon-inner">
+            <div class="coming-soon-icon">⚙️</div>
+            <h3 class="project-title">Next Project</h3>
+            <p class="project-desc">Currently building a full-stack app with React + FastAPI. Live soon.</p>
+            <span class="coming-badge">In Progress</span>
           </div>
         </article>
 
@@ -156,7 +161,6 @@
     </div>
   </section>
 
-  <!-- ====== CONTACT ====== -->
   <section id="contact">
     <div class="container">
       <div class="contact-wrapper fade-up">
@@ -164,22 +168,17 @@
         <h2 class="section-title">Get In Touch</h2>
         <hr class="section-divider" />
         <p class="contact-subtitle">
-          I'm always open to interesting projects, collaborations, or just a friendly chat about tech.
+          I'm looking for my next full-stack role. If you're hiring or have an interesting project, I'd love to hear from you.
         </p>
         <a href="mailto:nazdna21@gmail.com" class="contact-email">nazdna21@gmail.com</a>
         <div class="social-links">
-          <a href="https://github.com/Nazeercodes" class="social-link" target="_blank" rel="noopener">
-            GitHub ↗
-          </a>
-          <a href="https://linkedin.com/in/nazeerahmed" class="social-link" target="_blank" rel="noopener">
-            LinkedIn ↗
-          </a>
+          <a href="https://github.com/Nazeercodes" class="social-link" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://linkedin.com/in/nazeerahmed" class="social-link" target="_blank" rel="noopener">LinkedIn ↗</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ====== FOOTER ====== -->
   <footer>
     <div class="container">
       <p>Designed & built by Nazeer Ahmed · 2026</p>
@@ -188,5 +187,4 @@
 
   <script src="script.js"></script>
 </body>
-
 </html>
