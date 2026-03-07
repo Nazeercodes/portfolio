@@ -1,179 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nazeer Ahmed — Full Stack Developer</title>
-  <meta name="description"
-    content="Full Stack Developer specializing in React and Python. Building clean, performant web applications." />
+  <meta name="description" content="Full Stack Developer specializing in React and Python." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
+  <!-- NAV -->
   <nav id="navbar">
     <div class="nav-inner">
-      <a href="#about" class="nav-logo">NA.</a>
+      <a href="#about" class="nav-logo">NA<span>.</span></a>
       <ul class="nav-links">
-        <li><a href="#about" id="nav-about">About</a></li>
-        <li><a href="#skills" id="nav-skills">Skills</a></li>
-        <li><a href="#projects" id="nav-projects">Projects</a></li>
-        <li><a href="#contact" id="nav-contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
         <span class="theme-icon">🌙</span>
       </button>
     </div>
   </nav>
 
+  <!-- HERO -->
   <section id="about">
     <div class="container">
-      <div class="hero-grid">
-        <div class="hero-content">
-          <div class="fade-up">
-            <span class="hero-tag">👋 Available for work</span>
-          </div>
-          <h1 class="hero-name fade-up">
-            Nazeer<br />
-            <span>Ahmed.</span>
-          </h1>
-          <p class="hero-role fade-up">Full Stack Developer — React & Python</p>
-          <p class="hero-bio fade-up">
-            I build full-stack web applications with React on the front and Python on the back.
-            Currently based in Kolkata — open to remote roles and on-site opportunities across India.
-            I care about clean architecture, fast delivery, and writing code that actually makes sense six months later.
+      <div class="hero-eyebrow fade-up">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text">Available for work</span>
+      </div>
+      <h1 class="hero-name fade-up">
+        <span class="name-first">Nazeer</span>
+        <span class="name-last"><em>Ahmed</em></span>
+      </h1>
+      <div class="hero-bottom fade-up">
+        <div class="hero-bio-wrap">
+          <p class="hero-bio">
+            Full Stack Developer building web applications with React and Python.
+            Based in Kolkata — open to remote and on-site roles across India.
+            I care about clean code, fast delivery, and products that actually work.
           </p>
-          <div class="hero-actions fade-up">
-            <a href="#projects" class="btn btn-primary">View My Work ↓</a>
-            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Work</a>
+            <a href="#contact" class="btn btn-ghost">Contact</a>
           </div>
         </div>
-        <div class="hero-aside fade-up">
-          <div class="hero-card">
-            <div class="hero-card-row">
-              <span class="hero-card-label">Focus</span>
-              <span class="hero-card-value">React + Python</span>
-            </div>
-            <div class="hero-card-row">
-              <span class="hero-card-label">Location</span>
-              <span class="hero-card-value">Kolkata, India</span>
-            </div>
-            <div class="hero-card-row">
-              <span class="hero-card-label">Open to</span>
-              <span class="hero-card-value">Remote / On-site</span>
-            </div>
-            <div class="hero-card-row">
-              <span class="hero-card-label">Status</span>
-              <span class="hero-card-value status-dot">Actively looking</span>
-            </div>
-          </div>
+        <div class="hero-role-block">
+          <span class="role-label">Full Stack Developer</span>
+          <span class="role-stack">React · Python · FastAPI</span>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- SKILLS -->
   <section id="skills">
     <div class="container">
-      <p class="section-label fade-up">What I Work With</p>
-      <h2 class="section-title fade-up">Skills & Technologies</h2>
-      <hr class="section-divider" />
-      <div class="skills-columns">
-        <div class="skills-column">
-          <p class="skills-col-label">Frontend</p>
-          <div class="skills-grid">
-            <span class="skill-pill fade-up">React</span>
-            <span class="skill-pill fade-up">JavaScript</span>
-            <span class="skill-pill fade-up">TypeScript</span>
-            <span class="skill-pill fade-up">HTML & CSS</span>
+      <div class="section-header fade-up">
+        <span class="section-index">01</span>
+        <h2 class="section-title">Stack</h2>
+      </div>
+      <div class="skills-table">
+        <div class="skills-row fade-up">
+          <span class="skills-category">Frontend</span>
+          <div class="skills-items">
+            <span class="skill-item">React</span>
+            <span class="skill-item">TypeScript</span>
+            <span class="skill-item">HTML & CSS</span>
           </div>
         </div>
-        <div class="skills-column">
-          <p class="skills-col-label">Backend</p>
-          <div class="skills-grid">
-            <span class="skill-pill fade-up">Python</span>
-            <span class="skill-pill fade-up">FastAPI</span>
-            <span class="skill-pill fade-up">REST APIs</span>
-            <span class="skill-pill fade-up">SQL</span>
+        <div class="skills-row fade-up">
+          <span class="skills-category">Backend</span>
+          <div class="skills-items">
+            <span class="skill-item">Python</span>
+            <span class="skill-item">FastAPI</span>
+            <span class="skill-item">REST APIs</span>
+            <span class="skill-item">SQL</span>
           </div>
         </div>
-        <div class="skills-column">
-          <p class="skills-col-label">Tools</p>
-          <div class="skills-grid">
-            <span class="skill-pill fade-up">Git & GitHub</span>
-            <span class="skill-pill fade-up">Linux</span>
-            <span class="skill-pill fade-up">Postman</span>
-            <span class="skill-pill fade-up">Figma</span>
+        <div class="skills-row fade-up">
+          <span class="skills-category">Tools</span>
+          <div class="skills-items">
+            <span class="skill-item">Git & GitHub</span>
+            <span class="skill-item">Linux</span>
+            <span class="skill-item">Postman</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- PROJECTS -->
   <section id="projects">
     <div class="container">
-      <p class="section-label fade-up">Selected Work</p>
-      <h2 class="section-title fade-up">Projects</h2>
-      <hr class="section-divider" />
-      <div class="projects-grid">
+      <div class="section-header fade-up">
+        <span class="section-index">02</span>
+        <h2 class="section-title">Work</h2>
+      </div>
 
-        <article class="project-card fade-up featured">
-          <div class="project-preview">
-            <img src="images/roomie-preview.png" alt="RoomiE app preview" loading="lazy" />
-          </div>
-          <div class="project-body">
-            <div class="project-header">
-              <h3 class="project-title">RoomiE</h3>
-              <span class="project-badge">Full Stack</span>
-            </div>
+      <article class="project-featured fade-up">
+        <div class="project-meta">
+          <span class="project-num">001</span>
+          <span class="project-type">Full Stack App</span>
+        </div>
+        <div class="project-main">
+          <div class="project-text">
+            <h3 class="project-title">RoomiE</h3>
             <p class="project-desc">
-              A roommate-finder platform built for people looking for affordable shared accommodation.
-              Features real-time chat via Socket.io, listing management, image uploads, saved listings,
-              and JWT-based authentication — end to end.
+              A roommate-finder platform for people looking for affordable shared accommodation.
+              Real-time chat, listing management, image uploads, saved listings, and JWT auth — end to end.
             </p>
             <div class="project-tags">
-              <span class="project-tag">React</span>
-              <span class="project-tag">Node.js</span>
-              <span class="project-tag">Express</span>
-              <span class="project-tag">MongoDB</span>
-              <span class="project-tag">Socket.io</span>
+              <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Socket.io</span>
             </div>
             <div class="project-links">
-              <a href="https://roomie-gray.vercel.app/" class="project-link" target="_blank" rel="noopener">↗ Live Demo</a>
-              <a href="https://github.com/Nazeercodes/roomie" class="project-link" target="_blank" rel="noopener">⌥ GitHub</a>
+              <a href="https://roomie-gray.vercel.app/" target="_blank" rel="noopener" class="project-link">↗ Live Demo</a>
+              <a href="https://github.com/Nazeercodes/roomie" target="_blank" rel="noopener" class="project-link">⌥ GitHub</a>
             </div>
           </div>
-        </article>
-
-        <article class="project-card fade-up coming-soon-card">
-          <div class="coming-soon-inner">
-            <div class="coming-soon-icon">⚙️</div>
-            <h3 class="project-title">Next Project</h3>
-            <p class="project-desc">Currently building a full-stack app with React + FastAPI. Live soon.</p>
-            <span class="coming-badge">In Progress</span>
+          <div class="project-image">
+            <img src="images/roomie-preview.png" alt="RoomiE preview" loading="lazy" />
           </div>
-        </article>
+        </div>
+      </article>
 
-      </div>
+      <article class="project-wip fade-up">
+        <div class="project-meta">
+          <span class="project-num">002</span>
+          <span class="project-type wip-label">In Progress</span>
+        </div>
+        <div class="project-wip-body">
+          <h3 class="project-title">Next Project</h3>
+          <p class="project-desc">Building something new with React + FastAPI. Coming soon.</p>
+        </div>
+      </article>
+
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section id="contact">
     <div class="container">
-      <div class="contact-wrapper fade-up">
-        <p class="section-label">Say Hello</p>
-        <h2 class="section-title">Get In Touch</h2>
-        <hr class="section-divider" />
-        <p class="contact-subtitle">
-          I'm looking for my next full-stack role. If you're hiring or have an interesting project, I'd love to hear from you.
-        </p>
+      <div class="section-header fade-up">
+        <span class="section-index">03</span>
+        <h2 class="section-title">Contact</h2>
+      </div>
+      <div class="contact-body fade-up">
+        <p class="contact-headline">Let's work together.</p>
+        <p class="contact-sub">Looking for my next full-stack role. If you're hiring, reach out.</p>
         <a href="mailto:nazdna21@gmail.com" class="contact-email">nazdna21@gmail.com</a>
         <div class="social-links">
-          <a href="https://github.com/Nazeercodes" class="social-link" target="_blank" rel="noopener">GitHub ↗</a>
-          <a href="https://linkedin.com/in/nazeerahmed" class="social-link" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://github.com/Nazeercodes" target="_blank" rel="noopener" class="social-link">GitHub ↗</a>
+          <a href="https://linkedin.com/in/nazeerahmed" target="_blank" rel="noopener" class="social-link">LinkedIn ↗</a>
         </div>
       </div>
     </div>
@@ -181,7 +165,7 @@
 
   <footer>
     <div class="container">
-      <p>Designed & built by Nazeer Ahmed · 2026</p>
+      <p>Nazeer Ahmed · 2026</p>
     </div>
   </footer>
 
